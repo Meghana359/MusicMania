@@ -15,6 +15,7 @@ public class charliePuthSongs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final ArrayList<song> track = new ArrayList<>();
         track.add(new song("Attention", "Voice Notes"));

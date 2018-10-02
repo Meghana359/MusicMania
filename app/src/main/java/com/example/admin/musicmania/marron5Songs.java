@@ -14,6 +14,7 @@ public class marron5Songs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final ArrayList<song> track = new ArrayList<>();
         track.add(new song("Girls like you", "Red Pill Blues"));

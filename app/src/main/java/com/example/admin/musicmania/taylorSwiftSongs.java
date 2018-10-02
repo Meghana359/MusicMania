@@ -15,6 +15,7 @@ public class taylorSwiftSongs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final ArrayList<song> track = new ArrayList<>();
 

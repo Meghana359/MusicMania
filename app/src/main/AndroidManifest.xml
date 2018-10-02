@@ -18,13 +18,25 @@
         </activity>
         <activity
             android:name=".charliePuthSongs"
-            android:label="Charlie Puth"></activity>
+            android:label="Charlie Puth">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.admin.musicmania.MainActivity" />
+        </activity>
         <activity
             android:name=".marron5Songs"
-            android:label="Marron5"></activity>
+            android:label="Marron5">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.admin.musicmania.MainActivity" />
+        </activity>
         <activity
             android:name=".taylorSwiftSongs"
-            android:label="Taylor Swift"></activity>
+            android:label="Taylor Swift">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.admin.musicmania.MainActivity" />
+        </activity>
         <activity
             android:name=".currentSong"
             android:label="Now Playing"></activity>

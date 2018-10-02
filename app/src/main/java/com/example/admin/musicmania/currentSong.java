@@ -1,10 +1,11 @@
 package com.example.admin.musicmania;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -24,6 +25,7 @@ public class currentSong extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.now_playing);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
@@ -69,5 +71,24 @@ public class currentSong extends AppCompatActivity {
                 }
             }
         });
+    }
+    @Nullable
+    @Override
+    public Intent getParentActivityIntent() {
+        switch (image_no) {
+            case 1:
+                Intent i = new Intent(this, charliePuthSongs.class);
+                startActivity(i);
+                break;
+            case 2:
+                i = new Intent(this, marron5Songs.class);
+                startActivity(i);
+                break;
+            case 3:
+                i = new Intent(this, taylorSwiftSongs.class);
+                startActivity(i);
+                break;
+        }
+        return super.getParentActivityIntent();
     }
 }
