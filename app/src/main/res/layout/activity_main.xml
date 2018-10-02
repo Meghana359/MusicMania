@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/charlie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/imageSize"
+                android:layout_height="@dimen/imageSize"
+                android:src="@drawable/charlie" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:text="@string/charliePuth"
+                android:textSize="@dimen/textSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/maroon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/imageSize"
+                android:layout_height="@dimen/imageSize"
+                android:src="@drawable/maroon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:text="@string/maroon5"
+                android:textSize="@dimen/textSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/taylor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/imageSize"
+                android:layout_height="@dimen/imageSize"
+                android:src="@drawable/talyor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:text="@string/taylorSwift"
+                android:textSize="@dimen/textSize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="listMargin">20dp</dimen>
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="imageSize">50dp</dimen>
+    <dimen name="songTitle">25sp</dimen>
+    <dimen name="album">15sp</dimen>
+    <dimen name="playButton">30dp</dimen>
+    <dimen name="playSongButton">100dp</dimen>
+    <dimen name="artistImage">250dp</dimen>
+</resources>
