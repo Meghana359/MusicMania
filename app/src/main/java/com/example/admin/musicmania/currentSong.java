@@ -9,13 +9,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class currentSong extends AppCompatActivity {
-    boolean flag=true;
+    boolean flag = true;
+    String songName;
+    int image_no = 0;
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putSerializable("STRING_SONG_NAME", songName);
+        outState.putSerializable("STRING_IMAGE_NO", image_no);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.now_playing);
-        String songName;
-        int image_no = 0;
 
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
@@ -25,10 +33,10 @@ public class currentSong extends AppCompatActivity {
             } else {
                 songName = extras.getString("Title");
                 image_no = extras.getInt("Image");
-
             }
         } else {
-            songName = (String) savedInstanceState.getSerializable("STRING_I_NEED");
+            songName = (String) savedInstanceState.getSerializable("STRING_SONG");
+            image_no = (int) savedInstanceState.getSerializable("STRING_IMAGE_NO");
         }
         TextView name = findViewById(R.id.name1);
         name.setText(songName);
@@ -52,18 +60,14 @@ public class currentSong extends AppCompatActivity {
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (flag==true) {
+                if (flag) {
                     playButton.setImageResource(R.drawable.pause_image);
-                    flag=false;
-                }
-                else{
+                    flag = false;
+                } else {
                     playButton.setImageResource(R.drawable.play_image);
-                    flag=true;
+                    flag = true;
                 }
             }
         });
-
     }
-
-
 }

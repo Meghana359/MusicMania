@@ -16,37 +16,32 @@ public class taylorSwiftSongs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view);
 
-
         final ArrayList<song> track = new ArrayList<>();
 
-        track.add(new song("Love story","Fearless"));
-        track.add(new song("Blank space","1989"));
-        track.add(new song("Gorgeous","Reputation"));
-        track.add(new song("Shake it off","1989"));
-        track.add(new song("Bad blood","1989"));
-        track.add(new song("Back to december","Speak Now"));
-        track.add(new song("Style","1989"));
-        track.add(new song("Delicate","Reputation"));
-        track.add(new song("22","Red"));
-        track.add(new song("Out of the woods","1989"));
-        track.add(new song("Mean","Speak Now"));
-        track.add(new song("Mine","Speak Now"));
+        track.add(new song("Love story", "Fearless"));
+        track.add(new song("Blank space", "1989"));
+        track.add(new song("Gorgeous", "Reputation"));
+        track.add(new song("Shake it off", "1989"));
+        track.add(new song("Bad blood", "1989"));
+        track.add(new song("Back to december", "Speak Now"));
+        track.add(new song("Style", "1989"));
+        track.add(new song("Delicate", "Reputation"));
+        track.add(new song("22", "Red"));
+        track.add(new song("Out of the woods", "1989"));
+        track.add(new song("Mean", "Speak Now"));
+        track.add(new song("Mine", "Speak Now"));
 
         SongAdapter itemsAdapter = new SongAdapter(this, track);
 
-        ListView listView = (ListView) findViewById(R.id.list);
-
+        ListView listView =  findViewById(R.id.list);
         listView.setAdapter(itemsAdapter);
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
                 Intent intent = new Intent(getApplicationContext(), currentSong.class);
                 switch (i) {
                     case 0:
                         intent.putExtra("Title", track.get(i).getmSong());
-
                         break;
                     case 1:
                         intent.putExtra("Title", track.get(i).getmSong());

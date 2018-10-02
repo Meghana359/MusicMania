@@ -6,11 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 
 public class SongAdapter extends ArrayAdapter<song> {
-
 
     public SongAdapter(Activity mainActivity, ArrayList<song> words) {
         super(mainActivity, 0, words);
@@ -25,9 +23,9 @@ public class SongAdapter extends ArrayAdapter<song> {
         }
         song currentSong = getItem(position);
 
-        TextView nameTextView = (TextView) listItemView.findViewById(R.id.songName);
+        TextView nameTextView =  listItemView.findViewById(R.id.songName);
         nameTextView.setText(currentSong.getmSong());
-        TextView albumTextView = (TextView) listItemView.findViewById(R.id.albumName);
+        TextView albumTextView =  listItemView.findViewById(R.id.albumName);
         albumTextView.setText(currentSong.getmAlbum());
         return listItemView;
     }

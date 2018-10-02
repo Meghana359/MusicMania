@@ -16,21 +16,21 @@ public class marron5Songs extends AppCompatActivity {
         setContentView(R.layout.list_view);
 
         final ArrayList<song> track = new ArrayList<>();
-        track.add(new song("Girls like you","Red Pill Blues"));
-        track.add(new song("Sugar","V"));
-        track.add(new song("Animals","V"));
-        track.add(new song("Moves like jagger","Hands All Over"));
-        track.add(new song("Maps","V"));
-        track.add(new song("Wait","Red Pill Blues"));
-        track.add(new song("Sunday morning","Songs about Jane"));
-        track.add(new song("Misery","Hands All Over"));
-        track.add(new song("One more night","Overexposed"));
-        track.add(new song("Payphone","Overexposed"));
-        track.add(new song("What lovers do","Red Pill Blues"));
-        track.add(new song("She will be loved","Songs about Jane"));
+        track.add(new song("Girls like you", "Red Pill Blues"));
+        track.add(new song("Sugar", "V"));
+        track.add(new song("Animals", "V"));
+        track.add(new song("Moves like jagger", "Hands All Over"));
+        track.add(new song("Maps", "V"));
+        track.add(new song("Wait", "Red Pill Blues"));
+        track.add(new song("Sunday morning", "Songs about Jane"));
+        track.add(new song("Misery", "Hands All Over"));
+        track.add(new song("One more night", "Overexposed"));
+        track.add(new song("Payphone", "Overexposed"));
+        track.add(new song("What lovers do", "Red Pill Blues"));
+        track.add(new song("She will be loved", "Songs about Jane"));
 
         SongAdapter itemsAdapter = new SongAdapter(this, track);
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = findViewById(R.id.list);
         listView.setAdapter(itemsAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
