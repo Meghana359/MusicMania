@@ -22,7 +22,8 @@
             android:layout_width="@dimen/artistImage"
             android:layout_height="@dimen/artistImage"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="@dimen/margin" />
+            android:layout_margin="@dimen/margin"
+            android:contentDescription="@string/artistPhoto" />
 
         <ImageView
             android:id="@+id/playSong"
@@ -30,6 +31,7 @@
             android:layout_height="@dimen/playSongButton"
             android:layout_gravity="center"
             android:layout_margin="@dimen/margin"
+            android:contentDescription="@string/play_pause"
             android:scaleType="fitXY"
             android:src="@drawable/play_image" />
     </LinearLayout>

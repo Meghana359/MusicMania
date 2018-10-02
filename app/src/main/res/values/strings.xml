@@ -3,4 +3,6 @@
     <string name="charliePuth">Charlie Puth</string>
     <string name="maroon5">Maroon 5</string>
     <string name="taylorSwift">Taylor Swift</string>
+    <string name="artistPhoto">Displays artist photo</string>
+    <string name="play_pause">Play and Pause button</string>
 </resources>

@@ -1,14 +1,17 @@
 package com.example.admin.musicmania;
 
-public class song {
+public class Song {
     private String mSong;
     private String mAlbum;
 
-    public song(String song,String album) {
+    public Song(String song, String album) {
         mSong = song;
-        mAlbum=album;
+        mAlbum = album;
     }
-    public String getmAlbum(){return mAlbum;}
+
+    public String getmAlbum() {
+        return mAlbum;
+    }
 
     public String getmSong() {
         return mSong;

@@ -17,28 +17,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".charliePuthSongs"
-            android:label="Charlie Puth">
+            android:name=".CharliePuthSongs"
+            android:label="@string/charliePuth">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.admin.musicmania.MainActivity" />
         </activity>
         <activity
-            android:name=".marron5Songs"
-            android:label="Marron5">
+            android:name=".Marron5Songs"
+            android:label="@string/maroon5">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.admin.musicmania.MainActivity" />
         </activity>
         <activity
-            android:name=".taylorSwiftSongs"
-            android:label="Taylor Swift">
+            android:name=".TaylorSwiftSongs"
+            android:label="@string/taylorSwift">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.admin.musicmania.MainActivity" />
         </activity>
         <activity
-            android:name=".currentSong"
+            android:name=".CurrentSong"
             android:label="Now Playing"></activity>
     </application>
 

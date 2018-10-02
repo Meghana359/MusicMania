@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class currentSong extends AppCompatActivity {
+public class CurrentSong extends AppCompatActivity {
     boolean flag = true;
     String songName;
     int image_no = 0;
@@ -37,7 +37,7 @@ public class currentSong extends AppCompatActivity {
                 image_no = extras.getInt("Image");
             }
         } else {
-            songName = (String) savedInstanceState.getSerializable("STRING_SONG");
+            songName = (String) savedInstanceState.getSerializable("STRING_SONG_NAME");
             image_no = (int) savedInstanceState.getSerializable("STRING_IMAGE_NO");
         }
         TextView name = findViewById(R.id.name1);
@@ -72,20 +72,21 @@ public class currentSong extends AppCompatActivity {
             }
         });
     }
+
     @Nullable
     @Override
     public Intent getParentActivityIntent() {
         switch (image_no) {
             case 1:
-                Intent i = new Intent(this, charliePuthSongs.class);
+                Intent i = new Intent(this, CharliePuthSongs.class);
                 startActivity(i);
                 break;
             case 2:
-                i = new Intent(this, marron5Songs.class);
+                i = new Intent(this, Marron5Songs.class);
                 startActivity(i);
                 break;
             case 3:
-                i = new Intent(this, taylorSwiftSongs.class);
+                i = new Intent(this, TaylorSwiftSongs.class);
                 startActivity(i);
                 break;
         }
